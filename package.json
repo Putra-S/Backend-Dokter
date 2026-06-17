@@ -1,0 +1,32 @@
+{
+  "name": "backend-dokter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "bun app.js",
+    "dev": "bun --hot app.js",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2prod": "pm2 start ecosystem.config.js --env production",
+    "respm2": "pm2 restart backend-dokter"
+  },
+  "keywords": [],
+  "author": "sirs",
+  "license": "ISC",
+  "description": "API Backend khusus Aplikasi Dokter SIMRS",
+  "dependencies": {
+    "axios": "^1.16.1",
+    "dayjs": "^1.11.20",
+    "dotenv": "^17.4.2",
+    "hono": "^4.12.22",
+    "ioredis": "^5.10.1",
+    "jose": "^6.2.3",
+    "mysql2": "^3.22.3",
+    "ua-parser-js": "^2.0.10",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15"
+  }
+}
